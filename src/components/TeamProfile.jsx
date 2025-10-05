@@ -11,12 +11,12 @@ export default function TeamProfile() {
   };
 
   const team = [
-    { name: "Harshiv Chandra", role: "Systems Architect", brief:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis." },
-    { name: "Haihong Yu", role: "Embedded Engineer",brief:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis."  },
-    { name: "Ajay Sekar", role: "Thermal Systems Lead",brief:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis."  },
-    { name: "Bayan", role: "Design",brief:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis."  },
-    { name: "Julianna Klek", role: "Power Systems Engineer",brief:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis."  },
-    { name: "Vansh Gupta", role: "Mission Data Analyst",brief:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis."  },
+    { name: "Harshiv Chandra", image: placeholder, role: "Systems Architect", brief:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis." },
+    { name: "Haihong Yu",  image: placeholder,role: "Embedded Engineer",brief:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis."  },
+    { name: "Ajay Sekar",  image: placeholder,role: "Thermal Systems Lead",brief:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis."  },
+    { name: "Bayan",  image: placeholder,role: "Design",brief:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis."  },
+    { name: "Julianna Klek",  image: placeholder,role: "Power Systems Engineer",brief:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis."  },
+    { name: "Vansh Gupta", image: placeholder, role: "Mission Data Analyst",brief:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis."  },
   ];
 
   return (
@@ -35,7 +35,7 @@ export default function TeamProfile() {
             <div className="flip-card-inner">
               <div className="flip-card-front text-center p-4">
                 <img
-                  src={placeholder}
+                  src={member.image}
                   alt={member.name}
                   className="rounded-circle mb-3"
                   width="120"
@@ -56,4 +56,3 @@ export default function TeamProfile() {
     </div>
   );
 }
-
