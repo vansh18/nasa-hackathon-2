@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/nasa-hackathon-2/static/css/main.42ee1d42.css",
+    "main.js": "/nasa-hackathon-2/static/js/main.89a6b216.js",
+    "static/media/2.png": "/nasa-hackathon-2/static/media/2.1da6a1eb0455a14feb26.png",
+    "static/media/1.png": "/nasa-hackathon-2/static/media/1.2a4fc1281888b386106a.png",
+    "static/media/4.png": "/nasa-hackathon-2/static/media/4.b3bbfbd69fa92ad33be1.png",
+    "static/media/5.png": "/nasa-hackathon-2/static/media/5.651e17b2add91dbb5bdb.png",
+    "static/media/3.png": "/nasa-hackathon-2/static/media/3.cb2ceafbb10ae1c69d80.png",
+    "static/media/placeholder.png": "/nasa-hackathon-2/static/media/placeholder.00745c5763c954313815.png",
+    "static/media/jules.jpg": "/nasa-hackathon-2/static/media/jules.d420af0e29ef6f62e156.jpg",
+    "static/media/hh.jpg": "/nasa-hackathon-2/static/media/hh.4f089cef41bf15ebbc0b.jpg",
+    "static/media/ajey.jpg": "/nasa-hackathon-2/static/media/ajey.bd3844e6d0d6ab79b4bf.jpg",
+    "static/media/Cycle.png": "/nasa-hackathon-2/static/media/Cycle.83ac8a44757fbc15e4bd.png",
+    "static/media/wasteAnchor.png": "/nasa-hackathon-2/static/media/wasteAnchor.896ccb68529df26ae04b.png",
+    "static/media/antenna.png": "/nasa-hackathon-2/static/media/antenna.20d0239fc839def79d72.png",
+    "static/media/tripod.png": "/nasa-hackathon-2/static/media/tripod.7e04f5a7a9113b38ec39.png",
+    "static/media/visible_anchors.png": "/nasa-hackathon-2/static/media/visible_anchors.f8c3103de1f787dcf278.png",
+    "static/media/vansh.jpeg": "/nasa-hackathon-2/static/media/vansh.ec77d9cebf40b3a0828d.jpeg",
+    "static/media/nylonRope.png": "/nasa-hackathon-2/static/media/nylonRope.530eeee7f2c2e6876494.png",
+    "static/media/visible_ropes.png": "/nasa-hackathon-2/static/media/visible_ropes.9135ecc0eaa95613e844.png",
+    "static/media/visible_antenna_rods.png": "/nasa-hackathon-2/static/media/visible_antenna_rods.2a6858ec0e4478dcc3df.png",
+    "static/media/visible_pole.png": "/nasa-hackathon-2/static/media/visible_pole.8e5d18282fe0dd40b027.png",
+    "static/media/visible_boom.png": "/nasa-hackathon-2/static/media/visible_boom.5928259d7f342cbb9c68.png",
+    "static/media/pole.png": "/nasa-hackathon-2/static/media/pole.4e114600d9a172cdfa85.png",
+    "static/media/visible_tripod.png": "/nasa-hackathon-2/static/media/visible_tripod.9e16e5b2d1a7a1bf692c.png",
+    "static/media/harshiv.jpg": "/nasa-hackathon-2/static/media/harshiv.ce6cb4ce066028e263ad.jpg",
+    "index.html": "/nasa-hackathon-2/index.html",
+    "main.42ee1d42.css.map": "/nasa-hackathon-2/static/css/main.42ee1d42.css.map",
+    "main.89a6b216.js.map": "/nasa-hackathon-2/static/js/main.89a6b216.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42ee1d42.css",
+    "static/js/main.89a6b216.js"
+  ]
+}
