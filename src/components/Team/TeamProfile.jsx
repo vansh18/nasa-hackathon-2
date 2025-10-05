@@ -54,7 +54,7 @@ export default function TeamProfile() {
     {
       name: "Vansh Gupta",
       image: vansh,
-      role: "Mission Data Analyst",
+      role: "Developer | AI Engineer",
       brief:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis.",
     },

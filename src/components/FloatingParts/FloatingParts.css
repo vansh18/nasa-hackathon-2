@@ -198,6 +198,99 @@ body {
     font-size: 1.5rem;
     margin-bottom: 15px;
     color: rgba(190, 95, 63, 0.9);
+}
+
+.dive-deep-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: rgba(190, 95, 63, 0.9);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dive-deep-btn:hover {
+    background: rgba(190, 95, 63, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(190, 95, 63, 0.4);
+}
+
+.deep-dive-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(26, 26, 26, 0.95);
+    padding: 40px;
+    border-radius: 16px;
+    border: 2px solid rgba(190, 95, 63, 0.5);
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    outline: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.deep-dive-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(5px);
+}
+
+.deep-dive-content {
+    margin-top: 30px;
+}
+
+.info-row {
+    margin-bottom: 25px;
+}
+
+.info-row h3 {
+    color: rgba(190, 95, 63, 1);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.info-row p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+.energy-value-img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-modal-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: 2px solid rgba(190, 95, 63, 0.5);
+    color: rgba(190, 95, 63, 0.9);
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-modal-btn:hover {
+    background: rgba(190, 95, 63, 0.9);
+    color: white;
+
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }

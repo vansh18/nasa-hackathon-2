@@ -22,7 +22,14 @@
     <script src="./jquery.js"></script>
     <script src="./turn.js"></script>
     <script>
-      $(".flipbook").turn();
+      window.addEventListener("load", function () {
+        if (document.querySelector(".flipbook")) {
+          $(".flipbook").turn({
+            width: 800,
+            height: 600,
+          });
+        }
+      });
     </script>
   </body>
 </html>
