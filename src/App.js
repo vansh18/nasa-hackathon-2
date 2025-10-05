@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import FlipBook from './components/FlipBook/FlipBook';
@@ -7,8 +6,9 @@ import DragDrop from './components/DragDrop/DragDrop'
 import AntennaCoverage from './components/AntennaCoverage/AntennaCoverage';
 import AntennaModel from './components/Antenna3D/AntennaModel';
 import CircularFlowPage from './components/CircularModel/CircularFlowPage';
-// import ExpandedContent from "./components/CircularModel/ExpandedContent";
 import Sustainability from './components/Sustainability/Sustainability';
+// import Stats from './components/Stats/Statistics';
+import Team from './components/Team/TeamProfile';
 
 function App() {
   return (
@@ -17,11 +17,13 @@ function App() {
       <FlipBook />
       <CircularFlowPage />
       <Sustainability />
-      {/* <ExpandedContent /> */}
       <AntennaModel />
       <FloatingParts />
       <DragDrop />
       <AntennaCoverage />
+      {/* <Stats /> */}
+      <Team />
+
       
 
     </div>
