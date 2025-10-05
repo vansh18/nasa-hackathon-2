@@ -24,9 +24,39 @@
 }
 
 .avatar {
-  width: 80px;
-  height: 80px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  margin-bottom: 12px;
-  border: 2px solid #BE5F3F;
+  margin-bottom: 15px;
+  border: 3px solid #BE5F3F;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 20px rgba(190, 95, 63, 0.2);
+  filter: grayscale(20%);
+}
+
+.flip-card:hover .avatar {
+  transform: scale(1.05);
+  border-width: 4px;
+  box-shadow: 0 0 30px rgba(190, 95, 63, 0.4);
+  filter: grayscale(0%);
+}
+
+/* Add a smooth pulse animation to the border */
+@keyframes borderPulse {
+  0% {
+    border-color: rgba(190, 95, 63, 0.6);
+  }
+
+  50% {
+    border-color: rgba(190, 95, 63, 1);
+  }
+
+  100% {
+    border-color: rgba(190, 95, 63, 0.6);
+  }
+}
+
+.flip-card-front:hover .avatar {
+  animation: borderPulse 2s infinite ease-in-out;
 }

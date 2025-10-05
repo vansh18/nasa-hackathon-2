@@ -7,7 +7,7 @@ import AntennaCoverage from './components/AntennaCoverage/AntennaCoverage';
 import AntennaModel from './components/Antenna3D/AntennaModel';
 import CircularFlowPage from './components/CircularModel/CircularFlowPage';
 import Sustainability from './components/Sustainability/Sustainability';
-// import Stats from './components/Stats/Statistics';
+import Stats from './components/Stats/Statistics';
 import Team from './components/Team/TeamProfile';
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
       <FloatingParts />
       <DragDrop />
       <AntennaCoverage />
-      {/* <Stats /> */}
+      <Stats />
       <Team />
 
       

@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import "./TeamProfile.css";
+
+import ajey from "../../assets/teampix/ajey.jpg";
+import hh from "../../assets/teampix/hh.jpg";
+import vansh from "../../assets/teampix/vansh.jpeg";
 import placeholder from "../../assets/teampix/placeholder.png";
 
 export default function TeamProfile() {
@@ -19,14 +23,14 @@ export default function TeamProfile() {
     },
     {
       name: "Haihong Yu",
-      image: placeholder,
+      image: hh,
       role: "Embedded Engineer",
       brief:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis.",
     },
     {
       name: "Ajay Sekar",
-      image: placeholder,
+      image: ajey,
       role: "Thermal Systems Lead",
       brief:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis.",
@@ -47,7 +51,7 @@ export default function TeamProfile() {
     },
     {
       name: "Vansh Gupta",
-      image: placeholder,
+      image: vansh,
       role: "Mission Data Analyst",
       brief:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis.",
