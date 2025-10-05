@@ -27,7 +27,7 @@ export default function Sustainability() {
       shortDesc:
         "We preserve what’s already been perfected. Each component is reused or upcycled.",
       longDesc:
-        "Rather than degrading materials through destructive recycling, the design retains the embodied value of refined components. Structural and electronic parts are reused or upcycled into new, high-value configurations — maintaining their integrity across multiple lifecycles. This strategy ensures energy invested in manufacturing continues to yield benefits.",
+        "Rather than degrading materials through destructive recycling, the design retains the embodied value of refined components. Structural and electronic parts are reused or upcycled into new, high-value configurations, thus maintaining their integrity across multiple lifecycles. This strategy ensures energy invested in manufacturing continues to yield benefits.",
     },
     {
       title: "Resilient Design Philosophy",
@@ -35,7 +35,7 @@ export default function Sustainability() {
       shortDesc:
         "Performance that endures. Designed to thrive through dust, cold, and radiation.",
       longDesc:
-        "In the harsh Martian environment — with dust storms, vacuum-like conditions, and extreme temperature swings — resilience takes precedence over raw performance. The antenna employs solid-state fabrication methods and modular repairability to ensure continuous function despite environmental stress. Prioritizing reliability, maintainability, and adaptability ensures sustained performance over transient optimization.",
+        "On Mars, with dust storms, near-vacuum, and extreme temperature swings, resilience outweighs raw performance. The antenna’s solid-state design and modular repairability ensure operation under stress. By prioritizing reliability, maintainability, and adaptability, it sustains performance over short-term optimization.",
     },
   ];
 
