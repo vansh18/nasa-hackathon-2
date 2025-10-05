@@ -228,21 +228,27 @@ const AntennaCoverage = () => {
             <div className="legend-icon base-station-icon"></div>
             <div className="legend-text">
               <div className="legend-label">BASE STATION</div>
-              <div className="legend-description">Central communication hub - Fixed position</div>
+              <div className="legend-description">
+                Central communication hub - Fixed position
+              </div>
             </div>
           </div>
           <div className="legend-item">
             <div className="legend-icon antenna-icon"></div>
             <div className="legend-text">
               <div className="legend-label">ANTENNA</div>
-              <div className="legend-description">Relay communication nodes - Draggable</div>
+              <div className="legend-description">
+                Relay communication nodes - Draggable
+              </div>
             </div>
           </div>
           <div className="legend-item">
             <div className="legend-icon rover-icon"></div>
             <div className="legend-text">
               <div className="legend-label">ROVER</div>
-              <div className="legend-description">Mobile exploration vehicle - Draggable</div>
+              <div className="legend-description">
+                Mobile exploration vehicle - Draggable
+              </div>
             </div>
           </div>
         </div>
@@ -263,8 +269,26 @@ const AntennaCoverage = () => {
           </div>
         </div>
       </div>
-
       <div className="map-container">
+        <div className="instruction-panel">
+          <div className="instruction-title">How to Use</div>
+          <ul className="instruction-steps">
+            <li>
+              Drag <b>Antennas</b> to reposition them across the Mars grid.
+            </li>
+            <li>
+              Place antennas so that their coverage zones overlap for network
+              relay.
+            </li>
+            <li>
+              Move the <b>Rover</b> into range of an antenna or base station to
+              connect.
+            </li>
+            <li>
+              The status panel will update in real time as connections form.
+            </li>
+          </ul>
+        </div>
         <div
           ref={mapRef}
           className="mars-map"
