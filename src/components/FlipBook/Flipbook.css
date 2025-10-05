@@ -1,7 +1,7 @@
 .flipbook-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #1a1a1a;
@@ -12,32 +12,17 @@
 }
 
 .welcome-text {
-    flex: 1;
-    padding-right: 5%;
-    max-width: 500px;
-}
-
-.welcome-text h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
     margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, #BE5F3F 0%, #A04A2E 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-.welcome-text p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #fefefd;
-    margin-bottom: 1.5rem;
-    opacity: 0.9;
+    color: #BE5F3F;
 }
 
 .flipbook {
     width: 1200px;
     height: 600px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); */
     border-radius: 8px;
     overflow: hidden;
 }
@@ -102,5 +87,87 @@
 
     50% {
         box-shadow: 0 0 30px rgba(190, 95, 63, 0.3);
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .flipbook {
+        width: 1000px;
+        height: 500px;
+    }
+
+    .welcome-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .welcome-text p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .flipbook-container {
+        padding: 40px 3%;
+    }
+
+    .flipbook {
+        width: 800px;
+        height: 400px;
+    }
+
+    .welcome-text {
+        max-width: 400px;
+    }
+
+    .welcome-text h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .welcome-text p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .flipbook-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 3%;
+    }
+
+    .welcome-text {
+        padding-right: 0;
+        text-align: center;
+        max-width: 600px;
+    }
+
+    .flipbook {
+        width: 700px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flipbook {
+        width: 90vw;
+        height: calc(90vw * 0.5);
+    }
+
+    .welcome-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .page img {
+        width: 98%;
+    }
+
+    .flipbook .page {
+        padding: 10px;
+    }
+
+    .flipbook .page small {
+        font-size: 12px;
     }
 }

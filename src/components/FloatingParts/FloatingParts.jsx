@@ -5,7 +5,6 @@ import pole from "../../assets/parts/pole.png";
 import tripod from "../../assets/parts/tripod.png";
 import nylonRope from "../../assets/parts/nylonRope.png";
 import Modal from "react-modal";
-import wasteAnchor from "../../assets/parts/wasteAnchor.png";
 import boom from "../../assets/parts/boom.png";
 import rod from "../../assets/parts/rod.png";
 import foam from "../../assets/parts/foam.png";

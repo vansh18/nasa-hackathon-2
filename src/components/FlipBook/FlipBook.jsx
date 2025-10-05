@@ -27,12 +27,7 @@ const Flipbook = () => {
   return (
     <div className="flipbook-container">
       <div className="welcome-text">
-        <h1>Welcome to Rovie's Adventure</h1>
-        {/* <p>
-          Join us on an exciting journey to Mars with Rovie, our brave rover!
-          Discover how we can build communication systems to stay connected with
-          our robotic explorers on the Red Planet.
-        </p> */}
+        Welcome to Rovie's Adventure
       </div>
       <div className="flipbook" ref={bookRef}>
         <div className="hard">Story of Rovie</div>

@@ -238,17 +238,156 @@ header h1 {
     box-shadow: 0 6px 20px rgba(190, 95, 63, 0.6);
 }
 
+@media (max-width: 1366px) {
+    .container {
+        max-width: 1200px;
+        grid-template-columns: 300px 1fr;
+        padding: 0 20px;
+    }
+
+    .target-image {
+        max-width: 600px;
+        max-height: 600px;
+    }
+
+    .drop-zone {
+        min-height: 500px;
+    }
+
+    .antenna-assembly {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 900px;
+        grid-template-columns: 280px 1fr;
+        gap: 15px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+        margin: 60px auto;
+    }
+
+    .antenna-part {
+        padding: 12px;
+    }
+
+    .antenna-part img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .drop-zone {
+        min-height: 450px;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .parts-panel {
+        position: sticky;
+        top: 20px;
+        z-index: 10;
+    }
+
+    .visible-parts-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 
     header h1 {
         font-size: 1.8rem;
+        margin: 40px auto;
     }
 
     .drop-zone {
         min-height: 400px;
+    }
+
+    .target-image {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .antenna-assembly {
+        width: 300px;
+        height: 300px;
+    }
+
+    .drop-message p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .app {
+        padding: 10px;
+    }
+
+    .container {
+        gap: 20px;
+    }
+
+    .parts-panel,
+    .build-area {
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .parts-panel h2,
+    .build-area h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .visible-parts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .antenna-part {
+        padding: 10px;
+    }
+
+    .antenna-part img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .antenna-part p {
+        font-size: 0.9rem;
+    }
+
+    .drop-zone {
+        min-height: 350px;
+        border-width: 2px;
+    }
+
+    .antenna-assembly {
+        width: 250px;
+        height: 250px;
+    }
+
+    .success-message h2 {
+        font-size: 1.5rem;
+    }
+
+    .success-message button {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+
+    .progress {
+        font-size: 1rem;
+        padding: 8px 16px;
     }
 }
 
