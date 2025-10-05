@@ -4,6 +4,8 @@ import "./TeamProfile.css";
 import ajey from "../../assets/teampix/ajey.jpg";
 import hh from "../../assets/teampix/hh.jpg";
 import vansh from "../../assets/teampix/vansh.jpeg";
+import harshiv from "../../assets/teampix/harshiv.jpg";
+import jules from "../../assets/teampix/jules.jpg";
 import placeholder from "../../assets/teampix/placeholder.png";
 
 export default function TeamProfile() {
@@ -16,7 +18,7 @@ export default function TeamProfile() {
   const team = [
     {
       name: "Harshiv Chandra",
-      image: placeholder,
+      image: harshiv,
       role: "Systems Architect",
       brief:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis.",
@@ -44,7 +46,7 @@ export default function TeamProfile() {
     },
     {
       name: "Julianna Klek",
-      image: placeholder,
+      image: jules,
       role: "Power Systems Engineer",
       brief:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis.",
