@@ -28,12 +28,10 @@ const Parts = () => {
       name: "Tripod",
       image: tripod,
       description:
-        "Twin-scroll turbocharger with variable geometry for optimal boost across all RPM ranges. Significantly improves power and efficiency.",
+        "The 3D aluminum cube structure forms the tripod leg system supporting the antenna assembly.",
       specs: [
-        "Boost: 1.5 bar",
-        "Material: Titanium",
-        "Max RPM: 280,000",
-        "Weight: 8kg",
+        "Source: Construction Trash",
+        "Material Composition: 3D Aluminium Cube structure",
       ],
     },
     {
@@ -62,12 +60,10 @@ const Parts = () => {
       name: "Boom",
       image: boom,
       description:
-        "Adjustable coilover suspension system with 32-way damping adjustment. Perfect balance between comfort and track performance.",
+        "Recycled thermoplastic sheets are thermoformed into a hollow square boom that securely holds the antenna elements in alignment.",
       specs: [
-        "Travel: 100mm",
-        "Spring Rate: 10kg/mm",
-        "Material: Steel/Aluminum",
-        "Weight: 12kg",
+        "Source: Construction Trash",
+        "Material Component: Themoplastic",
       ],
     },
     {
