@@ -7,20 +7,19 @@ import nylonRope from "../../assets/parts/nylonRope.png";
 import wasteAnchor from "../../assets/parts/wasteAnchor.png";
 import boom from "../../assets/parts/boom.png";
 import rod from "../../assets/parts/rod.png";
+import foam from "../../assets/parts/foam.png";
 
 const Parts = () => {
   const partsData = [
     {
       id: 1,
-      name: "Pole",
+      name: "Mast",
       image: pole,
       description:
-        "High-performance engine block designed for maximum power output and durability. Features advanced cooling channels and reinforced cylinder walls.",
+        "Supports the antenna assembly to remain elevated and stable under Martian wind conditions. ",
       specs: [
-        "Material: Cast Iron",
-        "Displacement: 5.0L",
-        "Cylinders: V8",
-        "Weight: 180kg",
+        "Source: 3D cube structure from habitat construction.",
+        "Material: Large Aluminum Struts"
       ],
     },
     {
@@ -28,10 +27,10 @@ const Parts = () => {
       name: "Tripod",
       image: tripod,
       description:
-        "The 3D aluminum cube structure forms the tripod leg system supporting the antenna assembly.",
+        "A tripod leg system that supports the antenna assembly.",
       specs: [
-        "Source: Construction Trash",
-        "Material Composition: 3D Aluminium Cube structure",
+        "Source: 3D cube structure from habitat construction.",
+        "Material: Aluminum",
       ],
     },
     {
@@ -39,46 +38,46 @@ const Parts = () => {
       name: "Nylon Rope",
       image: nylonRope,
       description:
-        "Six-piston racing brake caliper with ceramic composite construction. Provides exceptional stopping power and heat dissipation.",
+        "Used to secure multiple components in the antenna assembly.",
       specs: [
-        "Pistons: 6",
-        "Material: Aluminum",
-        "Pad Area: 85cm²",
-        "Weight: 2.5kg",
+          "Source: Packaging Waste",
+        "Material: Nylon ",
       ],
     },
     {
       id: 4,
-      name: "Waste Anchor",
-      image: wasteAnchor,
+      name: "Thin Foam Gaskets",
+      image: foam,
       description:
-        "Eight-speed dual-clutch automatic transmission with lightning-fast shifts. Combines efficiency with performance for the ultimate driving experience.",
-      specs: ["Gears: 8", "Type: DCT", "Shift Time: 80ms", "Weight: 75kg"],
+        "Used for grip and damping of the elements that is slotted through the boom.",
+      specs: [
+        "Source: Construction Trash",
+        "Material: Foam",
+],
     },
     {
       id: 5,
       name: "Boom",
       image: boom,
       description:
-        "Recycled thermoplastic sheets are thermoformed into a hollow square boom that securely holds the antenna elements in alignment.",
+"Thermoformed hollow square boom that securely holds the antenna elements in alignment.",
       specs: [
         "Source: Construction Trash",
-        "Material Component: Themoplastic",
+        "Material: Themoplastic",
       ],
     },
     {
       id: 6,
-      name: "Antenna Rods",
+      name: "Three way antenna elements",
       image: rod,
       description:
-        "High-flow direct fuel injector with precision spray pattern. Ensures optimal fuel atomization for complete combustion and maximum power.",
+        "Smaller aluminum strut sections are repurposed as the antenna's three main elements: the reflector, driven element and director. Each rod is precision cut to achieve accurate spacing and resonance at 420 MHz.",
       specs: [
-        "Flow Rate: 1000cc/min",
-        "Pressure: 250 bar",
-        "Response: 2ms",
-        "Weight: 0.3kg",
+        "Source: 3D cube structure from habitat construction.",
+        "Material: Small Aluminium Struts."
       ],
     },
+   
   ];
 
   const [selectedPart, setSelectedPart] = useState(partsData[0]);
@@ -113,7 +112,7 @@ const Parts = () => {
               <h2>{selectedPart.name}</h2>
               <p className="description">{selectedPart.description}</p>
               <div className="specifications">
-                <h3>Specifications</h3>
+                <h3>Material Composition</h3>
                 <ul>
                   {selectedPart.specs.map((spec, index) => (
                     <li key={index}>{spec}</li>
