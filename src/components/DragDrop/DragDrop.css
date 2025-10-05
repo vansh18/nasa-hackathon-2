@@ -13,7 +13,7 @@ header {
 
 header h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin: 80px auto;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     color: #fefefd;
     background-clip: text;

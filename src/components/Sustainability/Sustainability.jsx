@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { useState } from "react";
 import "./Sustainability.css";
 import rc from "../../assets/icons/recycle.png";
 import mcf from "../../assets/icons/MCF.png";
@@ -41,42 +40,36 @@ export default function Sustainability() {
   ];
 
   return (
-    <div className="SusBackground text-light py-5">
-      <div className="container">
-        <div>        <h1 className="text-center mb-5">Why use this antenna design?</h1>
-        <img src={antenna} className="img-fluid mb-4"/>
-</div>
-        <div className="row g-3 row-cols-2 row-cols-lg-3">
+    <div className="sus-background">
+      <div className="sus-container">
+        <div className="sus-header">
+          <h1>Why use this antenna design?</h1>
+          <img
+            src={antenna}
+            alt="Antenna Design Illustration"
+            className="header-image"
+          />
+        </div>
+
+        <div className="cards-grid">
           {cards.map((card, index) => (
-            <div key={index} className="col d-flex justify-content-center">
+            <div key={index} className="card-wrapper">
               <div
                 className={`flip-card ${flipped[index] ? "flipped" : ""}`}
+                onClick={() => handleFlip(index)}
               >
                 <div className="flip-card-inner">
-                  <div className="flip-card-front text-center p-4">
+                  <div className="flip-card-front">
                     <img
                       src={card.icon}
                       alt={`${card.title} Icon`}
-                      className="img-fluid feature-img mb-3"
+                      className="feature-img"
                     />
                     <h2>{card.title}</h2>
                     <p>{card.shortDesc}</p>
-                    <button
-                      className="btn btn-outline-light mt-3"
-                      onClick={() => handleFlip(index)}
-                    >
-                      Learn More
-                    </button>
                   </div>
-                  <div className="flip-card-back text-center p-4">
-                    <h2>{card.title}</h2>
+                  <div className="flip-card-back">
                     <p>{card.longDesc}</p>
-                    <button
-                      className="btn btn-outline-light mt-3"
-                      onClick={() => handleFlip(index)}
-                    >
-                      Back
-                    </button>
                   </div>
                 </div>
               </div>
@@ -84,11 +77,6 @@ export default function Sustainability() {
           ))}
         </div>
       </div>
-
-      <div className="container">
-
-          {/* Empty Space */}
-          </div>
     </div>
   );
 }

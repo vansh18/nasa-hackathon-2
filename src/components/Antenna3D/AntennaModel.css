@@ -8,9 +8,7 @@
     align-items: center;
     justify-content: center;
     color: #BE5F3F;
-    border-top: 2px solid rgba(190, 95, 63, 0.3);
-    border-bottom: 2px solid rgba(190, 95, 63, 0.3);
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    background: #1a1a1a;
     overflow: hidden;
 }
 

@@ -8,7 +8,7 @@ import AntennaCoverage from './components/AntennaCoverage/AntennaCoverage';
 import AntennaModel from './components/Antenna3D/AntennaModel';
 import CircularFlowPage from './components/CircularModel/CircularFlowPage';
 // import ExpandedContent from "./components/CircularModel/ExpandedContent";
-// import Sustainability from './components/Sustainability/Sustainability';
+import Sustainability from './components/Sustainability/Sustainability';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Navbar />
       <FlipBook />
       <CircularFlowPage />
-      {/* <Sustainability /> */}
+      <Sustainability />
       {/* <ExpandedContent /> */}
       <AntennaModel />
       <FloatingParts />
