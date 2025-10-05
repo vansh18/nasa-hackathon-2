@@ -1,0 +1,279 @@
+.app {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    color: #fefefd;
+    background-clip: text;
+}
+
+.progress {
+    font-size: 1.2rem;
+    background: rgba(190, 95, 63, 0.15);
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid rgba(190, 95, 63, 0.3);
+    color: #BE5F3F;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.parts-panel,
+.build-area {
+    background: rgba(20, 20, 20, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(190, 95, 63, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.parts-panel h2,
+.build-area h2 {
+    color: #BE5F3F;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.visible-parts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.antenna-part {
+    background: rgba(30, 30, 30, 0.8);
+    border: 2px solid rgba(190, 95, 63, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    cursor: grab;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.antenna-part:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(190, 95, 63, 0.4);
+    border-color: #BE5F3F;
+    background: rgba(40, 40, 40, 0.9);
+}
+
+.antenna-part:active {
+    cursor: grabbing;
+}
+
+.antenna-part.placed {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.antenna-part img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: brightness(1.1);
+}
+
+.antenna-part p {
+    font-weight: 500;
+    color: #e0e0e0;
+    flex: 1;
+}
+
+.complete-antenna {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.drop-zone {
+    min-height: 600px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+    border: 3px dashed rgba(190, 95, 63, 0.5);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.drop-message {
+    text-align: center;
+    color: #BE5F3F;
+}
+
+.drop-message p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.assembled-parts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: radial-gradient(circle at center, rgba(190, 95, 63, 0.05) 0%, transparent 70%);
+    border-radius: 10px;
+}
+
+.placed-part {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    animation: placeAnimation 0.3s ease;
+    filter: brightness(1.5) contrast(1.2);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(190, 95, 63, 0.3);
+    border: 1px solid rgba(190, 95, 63, 0.2);
+}
+
+@keyframes placeAnimation {
+    from {
+        transform: scale(0) rotate(180deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.completion-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.target-image {
+    max-width: 800px;
+    max-height: 800px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    animation: scaleIn 0.6s ease;
+    filter: brightness(1.5) contrast(1.3);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(190, 95, 63, 0.4);
+    border: 2px solid rgba(190, 95, 63, 0.3);
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.success-message {
+    text-align: center;
+}
+
+.success-message h2 {
+    color: #4ade80;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.success-message button {
+    background: linear-gradient(135deg, #BE5F3F 0%, #A04A2E 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(190, 95, 63, 0.4);
+}
+
+.success-message button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(190, 95, 63, 0.6);
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .drop-zone {
+        min-height: 400px;
+    }
+}
+
+.antenna-assembly {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.placed-part {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.assembled-parts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}

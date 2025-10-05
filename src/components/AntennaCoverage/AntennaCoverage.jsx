@@ -18,7 +18,7 @@ const AntennaCoverage = () => {
   });
 
   const mapRef = useRef(null);
-  const mapWidth = 800;
+  const mapWidth = 900;
   const mapHeight = 500;
   const mapSize = Math.min(mapWidth, mapHeight);
 
@@ -192,6 +192,7 @@ const AntennaCoverage = () => {
   return (
     <div className="antenna-coverage-container">
       <div className="status-panel">
+        <div className="section-title">MARS COMMUNICATION NETWORK</div>
         <div className="rover-status">
           <div
             className={`status-indicator ${
@@ -221,7 +222,7 @@ const AntennaCoverage = () => {
       </div>
 
       <div className="legend-container">
-        <div className="legend-title">MARS COMMUNICATION NETWORK</div>
+        <div className="legend-title">LEGEND</div>
         <div className="legend-items">
           <div className="legend-item">
             <div className="legend-icon base-station-icon"></div>

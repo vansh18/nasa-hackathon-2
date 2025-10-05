@@ -1,0 +1,27 @@
+.navbar {
+    width: 100%;
+    padding: 15px 40px;
+    background: rgba(20, 20, 20, 0.75);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.team-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #BE5F3F;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px rgba(190, 95, 63, 0.7);
+}
+
+.team-title .highlight {
+    color: #9AB3B3;
+    text-shadow: 0 0 8px rgba(154, 179, 179, 0.7);
+    font-size: 2rem;
+}

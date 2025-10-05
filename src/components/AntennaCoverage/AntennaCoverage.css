@@ -1,23 +1,27 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .antenna-coverage-container {
     padding: 20px;
+    padding-top: 80px;
     margin: 0 auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background: linear-gradient(135deg, #4e403d 0%, #774941 100%);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .status-panel {
     border-radius: 12px;
     padding: 20px;
+}
+
+.section-title {
+    color: #fefefd;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .rover-status {
@@ -56,7 +60,7 @@
 }
 
 .stat-card {
-    border: 1px solid rgba(190, 95, 63, 0.3);
+    border: 2px solid rgba(190, 95, 63, 0.3);
     border-radius: 12px;
     padding: 20px;
     text-align: center;
@@ -92,7 +96,7 @@
 
 /* Legend Styles */
 .legend-container {
-    border: 1px solid rgba(190, 95, 63, 0.3);
+    border: 2px solid rgba(190, 95, 63, 0.3);
     border-radius: 12px;
     padding: 20px;
     backdrop-filter: blur(10px);
@@ -125,13 +129,13 @@
     padding: 15px;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    border: 1px solid rgba(190, 95, 63, 0.2);
+    border: 2px solid rgba(190, 95, 63, 0.3);
     transition: all 0.3s ease;
 }
 
 .legend-item:hover {
     background: rgba(0, 0, 0, 0.3);
-    border-color: rgba(190, 95, 63, 0.4);
+    border-color: #5A5958;
     transform: translateY(-2px);
 }
 
@@ -280,6 +284,7 @@
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(190, 95, 63, 0.3);
     border-radius: 16px;
     padding: 20px;
     box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.3);

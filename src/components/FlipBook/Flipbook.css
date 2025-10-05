@@ -1,0 +1,106 @@
+.flipbook-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    color: #fefefd;
+    position: relative;
+    padding: 60px 5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.welcome-text {
+    flex: 1;
+    padding-right: 5%;
+    max-width: 500px;
+}
+
+.welcome-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #BE5F3F 0%, #A04A2E 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.welcome-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #fefefd;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.flipbook {
+    width: 1200px;
+    height: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.flipbook .hard {
+    background: linear-gradient(135deg, #BE5F3F 0%, #A04A2E 100%) !important;
+    color: #fefefd;
+    font-weight: bold;
+    border: none;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(190, 95, 63, 0.4);
+}
+
+.flipbook .hard small {
+    font-style: italic;
+    font-weight: lighter;
+    opacity: 0.8;
+    font-size: 14px;
+    color: rgba(254, 254, 253, 0.9);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.flipbook .page {
+    background: rgba(20, 20, 20, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(190, 95, 63, 0.2);
+    color: #fefefd;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.page img {
+    width: 99%;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid rgba(190, 95, 63, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.flipbook .page small {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgba(254, 254, 253, 0.8);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Add page turn animation glow */
+.flipbook .page.turning {
+    animation: pageTurnGlow 0.5s ease;
+}
+
+@keyframes pageTurnGlow {
+
+    0%,
+    100% {
+        box-shadow: none;
+    }
+
+    50% {
+        box-shadow: 0 0 30px rgba(190, 95, 63, 0.3);
+    }
+}
