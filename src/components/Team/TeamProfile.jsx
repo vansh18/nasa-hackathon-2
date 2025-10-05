@@ -6,6 +6,7 @@ import hh from "../../assets/teampix/hh.jpg";
 import vansh from "../../assets/teampix/vansh.jpeg";
 import harshiv from "../../assets/teampix/harshiv.jpg";
 import jules from "../../assets/teampix/jules.jpg";
+import bayan from "../../assets/teampix/bayan.jpeg"
 import placeholder from "../../assets/teampix/placeholder.png";
 
 export default function TeamProfile() {
@@ -19,44 +20,44 @@ export default function TeamProfile() {
     {
       name: "Harshiv Chandra",
       image: harshiv,
-      role: "Systems Architect",
+      role: "Frontend & Ideation",
       brief:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis.",
+        "BITS Pilani alum and Master’s student in Computer Engineering at NUS, with research experience in deep learning and multiple publications.",
     },
     {
       name: "Haihong Yu",
       image: hh,
-      role: "Embedded Engineer",
+      role: "Design & Ideation",
       brief:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis.",
+        "Master student in Computer Engineering at NUS, Satellite research engineer, Part time locking dancer, Amateur photographer/DJ",
     },
     {
       name: "Ajay Sekar",
       image: ajey,
-      role: "Thermal Systems Lead",
+      role: "System Ideation & Architect",
       brief:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis.",
+        "Aerospace innovator combining design, simulation, and prototyping to solve complex engineering challenges.",
     },
     {
-      name: "Bayan",
-      image: placeholder,
-      role: "Design",
+      name: "Bayan Alqassab",
+      image: bayan,
+      role: "Design & UI/UX",
       brief:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis.",
+        "Pursuing a Master’s in Engineering Design and Innovation at NUS, I excel in industrial design, 3D printing, sustainable innovation and creativity.",
     },
     {
       name: "Julianna Klek",
       image: jules,
-      role: "Power Systems Engineer",
+      role: "System Architect & Analyst",
       brief:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis.",
+        "LSE alum with deep-tech startup and BCG experience, pursuing MSc Engineering Design at NUS. Marathon swimmer.",
     },
     {
       name: "Vansh Gupta",
       image: vansh,
-      role: "Developer | AI Engineer",
+      role: "Frontend & UI/UX",
       brief:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor justo non sapien faucibus, id rhoncus justo mattis.",
+        "BITS Pilani alum with startup and tech experience, currently working fulltime in a law related firm.",
     },
   ];
 
